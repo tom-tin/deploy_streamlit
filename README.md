@@ -1,7 +1,10 @@
 # Deploy Streamlit
 
 ## Project Overview
-This shows a simple example of how to deploy a simple ML model on to Streamlit.
+This shows a simple example of how to deploy a simple ML model on to Streamlit. It is an adaptation from the source in the Reference section.
+The changes I make compare to the source:
+* Separate one single original python file "mymodel.py" into two: model.py handles data generation and model training. main.py handle the Streamlit interface and viz.
+* During the run, I notice that a few imports has to be brought from the original mymodel.py into the model.py too. You cannot just leave all imports in main.py
 
 ## Installation
 Instructions on how to install the necessary dependencies.
